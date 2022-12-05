@@ -1,0 +1,449 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <title>Django</title>
+  </head>
+</head>
+
+<body>
+
+  {% include 'header.html' %}
+
+  <section class="banner">
+    <div class="container">
+      <div class="banner__item">
+        <div class="banner__toptitle">— Стоматология в Чебоксарах</div>
+        <div class="banner__title title">
+          Лечение зубов <br />
+          в тот же день
+        </div>
+        <div class="banner__subtitle">
+          Мы проведем полную консультацию,<br />
+          профессиональную гигиену полости рта,<br />
+          лечение зубов и десен
+        </div>
+        <a class="banner__btn btn" href="#coll">Записаться на приём</a>
+      </div>
+      <div class="banner__bottom">
+        <div class="banner__bottom-item">
+          <div class="img">
+            <img src="{% static 'img/Group.png' %}" alt="">
+          </div>
+          <p>Команда квалифицированных специалистов</p>
+        </div>
+        <div class="banner__bottom-item">
+          <div class="img">
+            <img src="{% static 'img/Vector.png' %}" alt="">
+          </div>
+          <p>3 стоматологических <br> кабинета</p>
+        </div>
+        <div class="banner__bottom-item">
+          <div class="img">
+            <img src="{% static 'img/Group1.png' %}" alt="">
+          </div>
+          <p>Удобное <br> расположение</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services__title title">Услуги</div>
+      <div class="services__subtitle subtitle">
+        Мы постарались сделать прайс, максимально простым и понятным.
+      </div>
+      <div class="services__block">
+        <div class="servicesItem">
+          <a class="servicesItem__box"
+            href=""
+            target="_blanck">
+            <div class="servicesItem__img">
+              <img src="{% static 'img/Group-22.svg' %}" alt="" />
+              <img src="{% static 'img/Group-22-1.svg' %}" alt="" />
+            </div>
+            <div class="servicesItem__text">Лечение зубов</div>
+            <div class="servicesItem__link">
+              <img src="{% static 'img/arrow-blue.svg' %}" alt="" />
+            </div>
+          </a>
+        </div>
+
+        <div class="servicesItem">
+          <a class="servicesItem__box" href=""
+            target="_blanck">
+            <div class="servicesItem__img">
+              <img src="{% static 'img/Group-23.svg' %}" alt="" />
+              <img src="{% static 'img/Group-23-1.svg' %}" alt="" />
+            </div>
+            <div class="servicesItem__text">Гигиена</div>
+            <div class="servicesItem__link">
+              <img src="{% static 'img/arrow-blue.svg' %}" alt="" />
+            </div>
+          </a>
+        </div>
+
+        <div class="servicesItem">
+          <a class="servicesItem__box" href=""
+            target="_blanck">
+            <div class="servicesItem__img">
+              <img src="{% static 'img/Group-24.svg' %} " alt="" />
+              <img src="{% static 'img/Group-24-1.svg' %}" alt="" />
+            </div>
+            <div class="servicesItem__text">Брекеты</div>
+            <div class="servicesItem__link">
+              <img src="{% static 'img/arrow-blue.svg' %}" alt="" />
+            </div>
+          </a>
+        </div>
+
+        <div class="servicesItem">
+          <a class="servicesItem__box"
+            href=""
+            target="_blanck">
+            <div class="servicesItem__img">
+              <img src="{% static 'img/Group-25.svg' %}" alt="" />
+              <img src="{% static 'img/Group-25-1.svg' %}" alt="" />
+            </div>
+            <div class="servicesItem__text">Детская стоматология</div>
+            <div class="servicesItem__link">
+              <img src="{% static 'img/arrow-blue.svg' %}" alt="" />
+            </div>
+          </a>
+        </div>
+
+        <div class="servicesItem">
+          <a class="servicesItem__box" href=""
+            target="_blanck">
+            <div class="servicesItem__img">
+              <img src="{% static 'img/Group-31.svg' %}" alt="" />
+              <img src="{% static 'img/Group-31-1.svg' %}" alt="" />
+            </div>
+            <div class="servicesItem__text">Имплантация</div>
+            <div class="servicesItem__link">
+              <img src="{% static 'img/arrow-blue.svg' %}" alt="" />
+            </div>
+          </a>
+        </div>
+
+        <div class="servicesItem">
+          <a class="servicesItem__box" href="" target="_blanck">
+            <div class="servicesItem__img">
+              <img src="{% static 'img/Group-46.svg' %}" alt="" />
+              <img src="{% static 'img/Group-46-1.svg' %} " alt="" />
+            </div>
+            <div class="servicesItem__text">Виниры</div>
+            <div class="servicesItem__link">
+              <img src="{% static 'img/arrow-blue.svg' %}" alt="" />
+            </div>
+          </a>
+        </div>
+
+        <div class="servicesItem">
+          <a class="servicesItem__box" href=""
+            target="_blanck">
+            <div class="servicesItem__img">
+              <img src="{% static 'img/Group-26.svg' %}" alt="" />
+              <img src="{% static 'img/Group-26-1.svg' %} " alt="" />
+            </div>
+            <div class="servicesItem__text">Коронки</div>
+            <div class="servicesItem__link">
+              <img src="{% static 'img/arrow-blue.svg' %}" alt="" />
+            </div>
+          </a>
+        </div>
+
+        <div class="servicesItem">
+          <a class="servicesItem__box" href=""
+            target="_blanck">
+            <div class="servicesItem__img">
+              <img src="{% static 'img/Group-29.svg' %} " alt="" />
+              <img src="{% static 'img/Group-29-1.svg' %} " alt="" />
+            </div>
+            <div class="servicesItem__text">Хирургия</div>
+            <div class="servicesItem__link">
+              <img src="{% static 'img/arrow-blue.svg' %}" alt="" />
+            </div>
+          </a>
+        </div>
+
+        <style>
+          .servicesItem {
+            width: 20%;
+          }
+        </style>
+      </div>
+    </div>
+  </section>
+
+  <section class="NamDoveryayut">
+    <div class="container">
+      <h2 class="title">Нам доверяют пациенты</h2>
+      <div class="dovers">
+        <div class="doversItem">
+          <p class="doversItem-num">1</p>
+          <p class="doversItem-title">Честные цены, без хитрых уловок</p>
+          <p class="doversItem-description">
+            Фиксируем цены в плане лечения, не повышаем в процессе.
+          </p>
+        </div>
+        <div class="doversItem">
+          <p class="doversItem-num">2</p>
+          <p class="doversItem-title">Опытные Врачи</p>
+          <p class="doversItem-description">
+            Врачи постоянно совершенствуются в своей специальности, несмотря
+            на богатый опыт работы.
+          </p>
+        </div>
+        <div class="doversItem">
+          <p class="doversItem-num">3</p>
+          <p class="doversItem-title">Комфортные условия</p>
+          <p class="doversItem-description">
+            Уютная обстановка и отзывчивый персонал сделают поход к
+            стоматологу максимально приятным.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="onlinColl">
+    <div class="container">
+      <div class="onlinColl__box">
+        <div class="onlinColl__item">
+          <div class="onlinColl__title title">
+            При фиксации брекетов на обе челюсти получи сертификат на 7000
+            рублей
+          </div>
+          <div class="onlinColl__subtitle">
+            Укажите свой номер телефона, мы перезвоним и подберем для вас
+            удобное время для консультации. Или позвоните нам сами —
+            <a href="">+7 900 333 10 40</a>
+          </div>
+          <form class="onlinColl__form form-send">
+            <input type="hidden" name="admin_email" value=" " />
+            <input type="hidden" name="subject" value="" />
+            <input class="onlinColl__inp" type="number" placeholder="Телефон" name="phone" />
+            <button class="onlinColl__btn btn">Записаться на прием</button>
+          </form>
+          <div class="onlinColl__police">
+            Записываясь на услугу вы даёте согласие на
+            <a href="#">обработку своих персональных данных</a>
+          </div>
+        </div>
+        <div class="onlinColl__img">
+          <div class="onlinColl__girl onlinColl__girl-top">
+            <img src="{% static 'img/call1.png' %}" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="treatment" id="treatment">
+    <div class="container">
+      <div class="treatment__title title">Лечение у нас</div>
+      <div class="treatment__subtitle subtitle">
+        Просто и безболезненно, с предоставлением <br />
+        всего спектра стоматологических услуг
+      </div>
+      <div class="treatment__box">
+        <div class="treatment__info">
+          <a class="treatment__logo logo" href="">
+            <img src="{% static 'img/лого.jpg' %}" alt="" />
+            клиника
+          </a>
+          <div class="treatment__texttop">
+            предоставляет весь спектр <br> стоматологических услуг таких как
+          </div>
+          <div class="treatment__tegs">
+            <ul>
+              <li>Терапия</li>
+              <li>Хирургия</li>
+              <li>Хирургия</li>
+              <li>Детская стоматология</li>
+              <li>Ортопедия</li>
+            </ul>
+          </div>
+          <div class="treatment__textbottom">
+            Приоритетным направлением является восстановление <br />
+            функциональных возможностей зубочелюстной системы и <br />
+            профилактика заболевания полости рта.
+          </div>
+          <div class="treatment__logos">
+            <a href="javascript:;">
+              <img src="{% static 'img/2-1.png' %}" alt="" />
+            </a>
+            <a href="javascript:;">
+              <img src="{% static 'img/320x0w-1.png' %}" alt="" />
+            </a>
+            <a href="javascript:;">
+              <img src="{% static 'img/logos3.jpg' %}" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="treatment__slider">
+          <div class="img">
+            <img src="{% static 'img/portrait-dentist-taking-selfie-with-patient 2.png' %}" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="specialists" id="specialists">
+    <div class="container">
+      <div class="specialists_title title">Специалисты</div>
+      <div class="specialists_subtitle subtitle">
+        Просто и безболезненно, с предоставлением всего спектра
+        стоматологических услуг
+      </div>
+      <div class="specialists__blocks">
+        <div class="specialistsItem">
+          <div class="specialistsItem__box">
+            <div class="specialistsItem_info">
+              <div class="specialistsItem__title">Шац Дарья Сергеевна</div>
+              <div class="specialistsItem__status">
+                Директор, Главный врач , Врач ортодонт<br />
+                Стаж работы 11 лет<br />
+              </div>
+            </div>
+            <div class="specialistsItem_img">
+              <div class="specialistsItem_worker">
+                <img src="{% static 'img/beautiful-young-woman-doctor-posing-white-medical-gown_1-removebg 2.png' %}" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="specialistsItem">
+          <div class="specialistsItem__box">
+            <div class="specialistsItem_info">
+              <div class="specialistsItem__title">
+                Оленина Марина Николаевна
+              </div>
+              <div class="specialistsItem__status">
+                Зам директора, Врач стоматолог терапевт<br />
+                Стаж работы более 25 лет <br />
+              </div>
+            </div>
+            <div class="specialistsItem_img">
+              <div class="specialistsItem_worker">
+                <img src="{% static 'img/beautiful-young-woman-doctor-posing-white-medical-gown_1-removebg 2.png' %}" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="specialistsItem">
+          <div class="specialistsItem__box">
+            <div class="specialistsItem_info">
+              <div class="specialistsItem__title">
+                Медведев Дмитрий Николаевич
+              </div>
+              <div class="specialistsItem__status">
+                Врач стоматолог хирург<br />
+                Стаж работы более 7 лет<br />
+              </div>
+            </div>
+            <div class="specialistsItem_img">
+              <div class="specialistsItem_worker">
+                <img src="{% static 'img/dentist-man-holding-tools-isolated-white-wall-laughing 2.png' %}" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="specialistsItem">
+          <div class="specialistsItem__box">
+            <div class="specialistsItem_info">
+              <div class="specialistsItem__title">
+                Терушкина Елена Дмитриевна
+              </div>
+              <div class="specialistsItem__status">
+                Врач стоматолог детский<br />
+                Стаж работы более 7 лет <br />
+              </div>
+            </div>
+            <div class="specialistsItem_img">
+              <div class="specialistsItem_worker">
+                <img src="{% static 'img/dentist-man-holding-tools-isolated-white-wall-laughing 2.png' %}" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="specialistsItem">
+          <div class="specialistsItem__box">
+            <div class="specialistsItem_info">
+              <div class="specialistsItem__title">
+                Львова Марина Сергеевна
+              </div>
+              <div class="specialistsItem__status">Медицинская сестра</div>
+            </div>
+            <div class="specialistsItem_img">
+              <div class="specialistsItem_worker">
+                <img src="{% static 'img/dentist-man-holding-tools-isolated-white-wall-laughing 2.png' %}" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="certifications">
+    <div class="container">
+      <h2 class="certifications__title">Сертификаты, награды и дипломы</h2>
+      <div class="certifications__list">
+        <div class="img"><img src="{% static 'img/13252040621aca4547cf2323c2b774ce2f89eb 1.png' %}" alt=""></div>
+        <div class="img"><img src="{% static 'img/13252040621aca4547cf2323c2b774ce2f89eb 1.png' %}" alt=""></div>
+        <div class="img"><img src="{% static 'img/13252040621aca4547cf2323c2b774ce2f89eb 1.png' %}" alt=""></div>
+        <img src="{% static 'img/arrow-chevron_big_left.png' %}" alt="" class="certifications__left certifications__arrow">
+        <img src="{% static 'img/arrow-chevron_big_left.png' %}" alt="" class="certifications__right certifications__arrow">
+      </div>
+    </div>
+  </section>
+
+  <section class="onlinColl" id="coll">
+    <div class="container">
+      <div class="onlinColl__box">
+        <div class="onlinColl__item">
+          <div class="onlinColl__title title">
+            Онлайн консультация специалиста <br />
+            по аудио и видео связи, Бесплатно.<br />
+          </div>
+          <div class="onlinColl__subtitle">
+            Укажите свой номер телефона, мы перезвоним и подберем для вас
+            удобное время для консультации. Или позвоните нам сами —
+            <a href="">+7 8352 60 90 02</a>
+          </div>
+          <form class="onlinColl__form form-send">
+            <input type="hidden" name="admin_email" value="" />
+            <input type="hidden" name="subject" value="" />
+            <input class="onlinColl__inp" type="number" placeholder="Телефон" name="phone" />
+            <button class="onlinColl__btn btn">Записаться на прием</button>
+          </form>
+          <div class="onlinColl__police">
+            Записываясь на услугу вы даёте согласие на
+            <a href="#">обработку своих персональных данных</a>
+          </div>
+        </div>
+        <div class="onlinColl__img">
+          <div class="onlinColl__girl onlinColl__girl-top">
+            <img src="{% static 'img/call2.png' %}" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% include 'footer.html' %}
+
+
+</body>
+
+</html>
